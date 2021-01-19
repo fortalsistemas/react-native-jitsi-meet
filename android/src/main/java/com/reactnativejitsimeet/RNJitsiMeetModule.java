@@ -59,6 +59,11 @@ public class RNJitsiMeetModule extends ReactContextBaseJavaModule {
                             .setUserInfo(_userInfo)
                             .setFeatureFlag("pip.enabled", false)
                             .setFeatureFlag("calendar.enabled", false)
+                            .setFeatureFlag("video-share.enabled", false)
+                            .setFeatureFlag("live-streaming.enabled", false)
+                            .setFeatureFlag("invite.enabled", false)
+                            .setFeatureFlag("close-captions.enabled", false)
+                            .setFeatureFlag("meeting-password.enabled", false)
                             .build();
                     mJitsiMeetViewReference.getJitsiMeetView().join(options);
                 }
@@ -94,6 +99,11 @@ public class RNJitsiMeetModule extends ReactContextBaseJavaModule {
                             .setUserInfo(_userInfo)
                             .setFeatureFlag("pip.enabled", false)
                             .setFeatureFlag("calendar.enabled", false)
+                            .setFeatureFlag("video-share.enabled", false)
+                            .setFeatureFlag("live-streaming.enabled", false)
+                            .setFeatureFlag("invite.enabled", false)
+                            .setFeatureFlag("close-captions.enabled", false)
+                            .setFeatureFlag("meeting-password.enabled", false)
                             .build();
                     mJitsiMeetViewReference.getJitsiMeetView().join(options);
                 }
