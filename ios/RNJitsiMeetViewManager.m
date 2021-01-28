@@ -44,7 +44,7 @@ RCT_EXPORT_METHOD(call:(NSString *)urlString userInfo:(NSDictionary *)userInfo)
         JitsiMeetConferenceOptions *options = [JitsiMeetConferenceOptions fromBuilder:^(JitsiMeetConferenceOptionsBuilder *builder) {        
             builder.room = urlString;
             builder.userInfo = _userInfo;
-
+            builder.audioOnly = FALSE;
             [builder setFeatureFlag:@"pip.enabled" withBoolean:NO];
             [builder setFeatureFlag:@"calendar.enabled" withBoolean:NO];
             [builder setFeatureFlag:@"video-share.enabled" withBoolean:NO];
@@ -53,7 +53,8 @@ RCT_EXPORT_METHOD(call:(NSString *)urlString userInfo:(NSDictionary *)userInfo)
             [builder setFeatureFlag:@"close-captions.enabled" withBoolean:NO];
             [builder setFeatureFlag:@"meeting-password.enabled" withBoolean:NO];
             [builder setFeatureFlag:@"call-integration.enabled" withBoolean:NO];
-            [builder setFeatureFlag:@"video-share.enabled" withBoolean:NO];
+            [builder setFeatureFlag:@"meeting-name.enabled" withBoolean:NO];
+            [builder setFeatureFlag:@"audio-only.enabled" withBoolean:NO];
         }];
         [jitsiMeetView join:options];
     });
@@ -89,7 +90,8 @@ RCT_EXPORT_METHOD(audioCall:(NSString *)urlString userInfo:(NSDictionary *)userI
             [builder setFeatureFlag:@"close-captions.enabled" withBoolean:NO];
             [builder setFeatureFlag:@"meeting-password.enabled" withBoolean:NO];
             [builder setFeatureFlag:@"call-integration.enabled" withBoolean:NO];
-            [builder setFeatureFlag:@"video-share.enabled" withBoolean:NO];
+            [builder setFeatureFlag:@"meeting-name.enabled" withBoolean:NO];
+            [builder setFeatureFlag:@"audio-only.enabled" withBoolean:NO];
         }];
         [jitsiMeetView join:options];
     });

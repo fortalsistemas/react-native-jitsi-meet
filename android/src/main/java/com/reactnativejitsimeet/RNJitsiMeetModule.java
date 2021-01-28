@@ -64,6 +64,9 @@ public class RNJitsiMeetModule extends ReactContextBaseJavaModule {
                             .setFeatureFlag("invite.enabled", false)
                             .setFeatureFlag("close-captions.enabled", false)
                             .setFeatureFlag("meeting-password.enabled", false)
+                            .setFeatureFlag("call-integration.enabled", false)
+                            .setFeatureFlag("meeting-name.enabled", false)
+                            .setFeatureFlag("audio-only.enabled", false)
                             .build();
                     mJitsiMeetViewReference.getJitsiMeetView().join(options);
                 }
@@ -104,6 +107,9 @@ public class RNJitsiMeetModule extends ReactContextBaseJavaModule {
                             .setFeatureFlag("invite.enabled", false)
                             .setFeatureFlag("close-captions.enabled", false)
                             .setFeatureFlag("meeting-password.enabled", false)
+                            .setFeatureFlag("call-integration.enabled", false)
+                            .setFeatureFlag("meeting-name.enabled", false)
+                            .setFeatureFlag("audio-only.enabled", false)
                             .build();
                     mJitsiMeetViewReference.getJitsiMeetView().join(options);
                 }
