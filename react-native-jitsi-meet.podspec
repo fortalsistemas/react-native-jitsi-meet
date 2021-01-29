@@ -16,6 +16,4 @@ Pod::Spec.new do |s|
   s.source_files  = "ios/**/*.{h,m}"
 
   s.dependency 'React'
-  #s.dependency 'JitsiMeetSDK', '2.10.0'
-  s.dependency 'JitsiMeetSDK', :git => 'https://github.com/fortalsistemas/jitsi-meet-ios-sdk-releases.git'
 end
