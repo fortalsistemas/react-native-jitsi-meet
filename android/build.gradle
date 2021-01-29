@@ -41,7 +41,7 @@ android {
 
 repositories {
   maven {
-    url "https://github.com/fortalsistemas/jitsi/jitsi-maven-repository/raw/master/releases"
+    url "https://github.com/fortalsistemas/jitsi-maven-repository/raw/master/releases"
   }
   google()
   mavenCentral()
