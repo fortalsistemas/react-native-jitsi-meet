@@ -59,7 +59,6 @@ dependencies {
     exclude group: 'com.facebook.react', module:'react-native-community_netinfo'
     exclude group: 'com.facebook.react', module:'react-native-keep-awake'
     exclude group: 'com.facebook.react', module:'react-native-svg'
-    exclude group: 'com.facebook',module:'hermes'
     transitive = true
   }
 }
