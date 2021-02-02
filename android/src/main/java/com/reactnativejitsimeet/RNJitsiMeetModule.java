@@ -67,6 +67,8 @@ public class RNJitsiMeetModule extends ReactContextBaseJavaModule {
                             .setFeatureFlag("call-integration.enabled", false)
                             .setFeatureFlag("meeting-name.enabled", false)
                             .setFeatureFlag("audio-only.enabled", false)
+                            .setFeatureFlag("share-screen.enabled", false)
+                            .setFeatureFlag("mute-everyone.enabled", false)
                             .build();
                     mJitsiMeetViewReference.getJitsiMeetView().join(options);
                 }
@@ -110,6 +112,8 @@ public class RNJitsiMeetModule extends ReactContextBaseJavaModule {
                             .setFeatureFlag("call-integration.enabled", false)
                             .setFeatureFlag("meeting-name.enabled", false)
                             .setFeatureFlag("audio-only.enabled", false)
+                            .setFeatureFlag("share-screen.enabled", false)
+                            .setFeatureFlag("mute-everyone.enabled", false)
                             .build();
                     mJitsiMeetViewReference.getJitsiMeetView().join(options);
                 }
