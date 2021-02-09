@@ -10,6 +10,7 @@ import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.bridge.UiThreadUtil;
 import com.facebook.react.module.annotations.ReactModule;
 import com.facebook.react.bridge.ReadableMap;
+import org.jitsi.meet.sdk.JitsiMeetActivityDelegate;
 
 @ReactModule(name = RNJitsiMeetModule.MODULE_NAME)
 public class RNJitsiMeetModule extends ReactContextBaseJavaModule {
@@ -131,5 +132,10 @@ public class RNJitsiMeetModule extends ReactContextBaseJavaModule {
                 }
             }
         });
+    }
+
+    @ReactMethod
+    public void backPress(){
+        JitsiMeetActivityDelegate.onBackPressed();
     }
 }
