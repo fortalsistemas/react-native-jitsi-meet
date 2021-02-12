@@ -40,8 +40,8 @@ android {
 }
 
 repositories {
-  maven {
-    url "https://github.com/fortalsistemas/jitsi-meet-sdk-android.git"
+  maven { 
+    url "https://github.com/fortalsistemas/jitsi-meet-sdk-android/raw/master/releases"
   }
   //maven { url "file:/tmp/repo" } // develop mode
   google()
